@@ -1,0 +1,68 @@
+body{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	
+}
+/*Header Styles*/
+.header .navbar{
+	background: none transparent;
+}
+.header .container{
+	padding: 10px 0px;
+}
+.brand{
+	color: #FFF;	
+}
+.header .navbar-default{
+	border-color: transparent;
+	box-shadow: none;
+}
+.header .navbar-nav>.active>a,
+.header .navbar-default .navbar-nav > li > a:hover {
+	background-image: none;
+	background-color: transparent;
+	box-shadow: none;
+	color: #FFF;
+	border-bottom: 2px solid #09F;
+}
+
+/*Main Styles*/
+.main{
+}
+.mainHero{
+	background-image: url(../img/website-hero-all.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 90vh;
+	min-height: 650px;
+	margin-bottom: 8px; 
+}
+
+
+/* Common */
+.bg-bright-red{
+	background-color: #E84C3C !important;
+}
+.bg-vivid-blue{
+	background-color: #0DA2DA !important;
+}
+.bg-desaturated-blue{
+	background-color: #243656 !important;
+}
+.bg-dark-green{
+	background-color: #64A601 !important;
+}
+.bg-strong-orange{
+	background-color: #D73900 !important;
+}
+.bg-pure-orange{
+	background-color: #F29400 !important;
+}
+.bg-strong-blue{
+	background-color: #007BBE !important; 
+}
+.bg-strong-pink{
+	background-color: #CC0034 !important;
+}

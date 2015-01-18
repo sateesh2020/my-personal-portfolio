@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Personal Portfolio</title>
+    
+    <!-- CSS (load bootstrap) -->
+    <link rel="stylesheet" href="assests/css/vendor/bootstrap/bootstrap.min.css">
+    
+    <!-- Font-Awesome Icons -->
+    <link rel="stylesheet" href="assests/css/vendor/font-awesome/font-awesome.min.css">
+
+    <!-- Roboto Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assests/css/styles.css">
+</head>
+
+<!-- apply our angular app to our site -->
+<body ng-app="routerApp">
+
+<!-- NAVBAR
+    ================================================== -->
+    <header class="header">
+            <div class="navbar navbar-default navbar-fixed-top main-menu bg-strong-pink" style="display:none" role="navigation">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toogle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand"  ui-sref="home" rollapp-href="#"><span class="brand">LOGO</span></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a ui-sref="home">HOME</a></li>
+                    <li class=""><a ui-sref="about">About</a></li>
+                    <li class=""><a href="#" rollapp-href="#">IPSUM</a></li>
+                    <li class=""><a href="#" title="" rollapp-href="#">DIPSUM</a></li>
+                    <li class=""><a href="#" title="" rollapp-href="#">AMET</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+    </header>
+<!-- MAIN CONTENT -->
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<section  class="container-fluid main" role="main">
+        <div class="row" ui-view></div>
+</section>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="assests/libs/angular/angular.min.js"></script>
+    <script src="assests/libs/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>

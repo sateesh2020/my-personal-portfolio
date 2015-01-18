@@ -1,0 +1,8 @@
+{
+	"name": "angular",
+	"version": "1.0.0",
+	"dependencies": {
+		"ui-bootstrap": "latest",
+		"ui-router": "latest"
+	}
+}
